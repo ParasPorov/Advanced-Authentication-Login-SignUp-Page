@@ -1,0 +1,47 @@
+
+<% include  ../partials/header %>
+
+<br><br><br>
+<div class ="ui container">
+    <h1 class="ui dividing header">Login Page</h1>
+</div>    
+
+<br>
+
+<div class ="ui container">
+    <form action ="/login" method="POST" class="ui form">
+
+    <div class="five wide field">
+
+        <div class="required field">
+            <label>UserName</label>
+            <input type="text" name="username" placeholder="Enter Username">
+        </div>
+
+<!--          <div class="field">
+        <label>First Name</label>
+        <input type="text" name="first-name" placeholder="First Name">
+        </div> -->
+        
+        <div class="required field">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter Password">
+        </div>
+
+        <div class="field">
+            <div class="ui checkbox">
+                <input type="checkbox" tabindex="0" class="hidden">
+                <label>I agree to the Terms and Conditions</label>
+            </div>
+        </div>
+
+        <button class="ui submit button">Submit</button>
+
+        </div>
+    
+
+    </form>
+
+    </div>
+
+    <% include  ../partials/footer %>

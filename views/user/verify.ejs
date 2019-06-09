@@ -1,0 +1,30 @@
+
+<% include   ../partials/header %>
+
+<br><br><br>
+<div class ="ui container">
+    <h1 class="ui dividing header">Verify Your Account</h1>
+</div>    
+
+<br>
+
+<div class ="ui container">
+    <form action ="/user/verify" method="POST" class="ui form">
+
+    <div class="five wide field">
+
+        <div class="required field">
+            <label>Token ID</label>
+            <input type="text" name="secretToken" placeholder="Enter Token ID">
+        </div>
+
+        <button class="ui submit button">Verify</button>
+
+        </div>
+    
+
+    </form>
+
+    </div>
+
+    <% include   ../partials/footer %>

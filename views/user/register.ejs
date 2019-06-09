@@ -1,0 +1,53 @@
+<% include  ../partials/header %>
+    
+    <h1>This is Register Page </h1>
+
+
+    <div class="ui container">
+    <br><br><br>
+
+    <div class ="ui container">
+        <form action ="/register" method="POST" class="ui form">
+
+            <div class="five wide field">
+
+               <div class="required field">
+                  <label>Full Name</label>
+                  <input type="text" name="fullname" placeholder="Enter Fullname">
+                </div>
+
+                <div class="required field">
+                  <label>Username</label>
+                  <input type="text" name="username" placeholder="Enter Username">
+                </div>
+
+        
+               <div class="required field">
+                  <label>Password</label>
+                  <input type="password" name="password" placeholder="Enter Password">
+               </div>
+
+               <div class="required field">
+                 <label>Confirm Password</label>
+                 <input type="password" name="password2" placeholder="Enter Password">
+               </div>
+
+               <button class="ui submit button">Submit</button>
+
+             </div>
+    
+
+        </form>
+
+    </div>
+    
+
+     
+       
+    
+
+
+
+
+
+    <% include   ../partials/footer %>

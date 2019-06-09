@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<title>Login Page</title>
+</head>
+<body>
+
+
+<div class="ui menu">
+
+
+    
+    <div>
+      <a class="item" href="/">Home</a> 
+    </div>
+
+    <div >
+        <a class="item" href="/logout">Log-Out</a>
+    </div>
+
+
+  
+
+    <div  class="right menu">
+    
+    <div class="item" >
+        <a href="/register" class="ui primary button"> Sign-up</a>
+    </div>
+    <div class="item"  >
+        <a href="/login" class="ui primary button">Log-In</a>
+    </div>
+    </div>
+    
+    
+
+</div>
+
+<div class="ui container">
+        
+<% if(error && error.length>0){ %>
+    <% for(var i=0;i<error.length;i++){ %> 
+    <div class="alert alert-danger" role="alert">
+        <%=error[i]%>
+    </div>
+    <% } %> 
+<%}if(success && success.length>0){%> 
+     <% for(var i=0;i<success.length;i++){ %>   
+     <div class="alert alert-success" role="alert">
+        <%=success%>
+    </div>
+    <% } %> 
+<%}%>    
+
+</div>
